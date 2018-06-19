@@ -1,0 +1,17 @@
+<input name="btn" id="btn" type="button" OnClick="fn()"></input>
+
+<div id="div"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+<script>
+
+function fn(){
+$.get( "http://172.30.98.212:8080/", function( data ) {
+  $( "div" ).html( data );
+});
+
+}
+
+</script>
