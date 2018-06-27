@@ -12,7 +12,9 @@ echo $ip.':'.$port;
 <script>
 function fn(){
 <?php
-echo "$.get( '".$ip.':'.$port."/', function( data ) {$( 'div' ).html( data );});"
+$.get(
+echo "'".$ip.':'.$port."'"
+, function( data ) {$( 'div' ).html( data );});
 ?>
 }
 
