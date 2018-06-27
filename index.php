@@ -3,7 +3,7 @@
 echo gethostname();
 $ip= getenv('BACK_PY_SERVICE_HOST');
 $port== getenv('BACK_PY_SERVICE_PORT');
-echo $ip:$port;
+echo $ip.':'.$port;
 ?>
 
 <input name="btn" id="btn" type="button" OnClick="fn()"></input>
@@ -12,7 +12,7 @@ echo $ip:$port;
 <script>
 function fn(){
 <?php
-echo "$.get( '".$ip:$port."/', function( data ) {$( 'div' ).html( data );});"
+echo "$.get( '".$ip.':'.$port."/', function( data ) {$( 'div' ).html( data );});"
 ?>
 }
 
