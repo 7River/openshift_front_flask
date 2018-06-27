@@ -2,7 +2,7 @@
 <?php
 echo gethostname();
 $ip= getenv('BACK_PY_SERVICE_HOST');
-$port== getenv('BACK_PY_SERVICE_PORT');
+$port= getenv('BACK_PY_SERVICE_PORT');
 echo $ip.':'.$port;
 ?>
 
