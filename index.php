@@ -11,11 +11,13 @@ echo $ip.':'.$port;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script>
 function fn(){
+  $.get(
 <?php
-$.get(
+
 echo "'".$ip.':'.$port."'"
-, function( data ) {$( 'div' ).html( data );});
+
 ?>
+, function( data ) {$( 'div' ).html( data );});
 }
 
 </script>
