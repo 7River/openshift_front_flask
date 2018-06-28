@@ -14,15 +14,10 @@ function fn(){
   $.get(
 <?php
 
-echo "'".$ip.':'.$port."'"
+echo "'http://".$ip.':'.$port."'"
 
 ?>
 , function( data ) {$( 'div' ).html( data );});
 }
 
 </script>
-
-
-
-
-?>
